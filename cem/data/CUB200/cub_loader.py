@@ -968,8 +968,9 @@ def find_class_imbalance(pkl_file, multiple_attr=False, attr_idx=-1):
     If multiple_attr is True, then return imbalance ratio separately for each attribute. Else, calculate the overall imbalance across all attributes
     """
     imbalance_ratio = []
-    base_dir = os.path.join(DATASET_DIR, 'class_attr_data_10')
-    data = pickle.load(open(os.path.join(base_dir, pkl_file), 'rb'))
+    # base_dir = os.path.join(DATASET_DIR, 'class_attr_data_10')
+    # data = pickle.load(open(os.path.join(base_dir, pkl_file), 'rb'))
+    data = pickle.load(open(pkl_file, 'rb'))
     n = len(data)
     n_attr = len(data[0]['attribute_label'])
     if attr_idx >= 0:
