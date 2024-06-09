@@ -8,5 +8,5 @@ seaborn
 torch
 torchmetrics
 torchvision
-tensorflow
+ensorflow[and-cuda]
 prettytable

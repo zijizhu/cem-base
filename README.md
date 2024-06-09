@@ -285,7 +285,8 @@ models/logs into the given output directory (`dot_results/` in this case).
 Similarly, you can recreate our `CUB` and `CelebA` experiments (or those on any other synthetic dataset) by running
 
 ```bash
-$ python experiments/run_experiments.py -c experiments/configs/{cub/celeba}_config.yaml
+python experiments/run_experiments.py -c experiments/configs/cub_config.yaml
+python experiments/run_experiments.py -c experiments/configs/celeba_config.yaml
 ```
 
 These scripts will also run the intervention experiments and generate the test

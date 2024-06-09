@@ -36,7 +36,6 @@ setuptools.setup(
         "torch",
         "torchmetrics",
         "torchvision",
-        "tensorflow",
         "prettytable"
     ],
 )
